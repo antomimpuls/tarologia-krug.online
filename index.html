@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>
 const SITE_SETTINGS = {
-  'phoneNumber': '+79185855731',
-  'psychicName': 'Алёна Владимировна',
+  'phoneNumber': '+79034892630',
+  'psychicName': 'Римма',
   'city': 'Краснодар',
   'address': 'г. Москва, ул. Северная, д. 324, офис 45',
   'enableRedirect': false,
@@ -21,14 +21,14 @@ const SITE_SETTINGS = {
   'siteUrl': 'https://tarologia-krug.online/',
   'whatsappMessage': 'Здравствуйте, хочу обратиться к вам за помощью.',
   'telegramEnabled': 1,
-  'telegramNickname': 'Dana17_magiya',
+  'telegramNickname': 'Mag_Rima',
   'yandexMetrikaId': '112332133',
   'psychicImageURL': 'https://raw.githubusercontent.com/antomimpuls/tarologia-krug.online/main/AAACbcpGg9dJB1clZm3GSPM2F86pZfNN9jCFHoecnzZFkxiMtND18xTHDdqCFZ2KDcYqZMV5voPP3UbNr_t1AQBLfg0.jpg',
   'workingHours': 'ежедневно 08:30-21:30',
   'responseTime': '6-14 минут',
   'metrikaMessengerVisible': false
 };
-const PSYCHIC_NAME=SITE_SETTINGS.psychicName||'';
+const PSYCHIC_NAME=SITE_SETTINGS.psychicName||'Римма';
 const PHONE_DIGITS=(SITE_SETTINGS.phoneNumber||'').replace(/\D/g,'');
 const WHATSAPP_MESSAGE=PSYCHIC_NAME ? `Здравствуйте, ${PSYCHIC_NAME}! Хочу обратиться к вам за помощью.` : 'Здравствуйте, хочу обратиться к вам за помощью.';
 const ENCODED_MESSAGE=encodeURIComponent(WHATSAPP_MESSAGE);
@@ -1346,7 +1346,7 @@ function replaceNamePlaceholders(name){
 }
 
 function setImagesAndTexts(){
-    const psychicName = SETTINGS.psychicName || 'Таисия Даниловна';
+    const psychicName = SETTINGS.psychicName || 'Римма';
     replaceNamePlaceholders(psychicName);
     const heroName = document.getElementById('heroName');
     if (heroName) {
